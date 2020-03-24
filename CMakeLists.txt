@@ -23,5 +23,5 @@ add_executable(calculator_cpp
 target_link_libraries(calculator_cpp
                       ${LIBADD_CPP_LIBRARIES} )
 
-install(TARGETS calculator_cpp DESTINATION lib/calculator_cpp)
+install(TARGETS calculator_cpp DESTINATION bin)
 
