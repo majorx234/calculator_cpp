@@ -19,7 +19,7 @@ find_path(
 
 find_library(
   LIBADD_CPP_LIBRARY
-  NAMES libadd_cpp/libadd.so
+  NAMES libadd_cpp.so
   DOC "libadd_cpp library"
 )
 
