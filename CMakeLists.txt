@@ -4,9 +4,11 @@ project (calculator_cpp)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmakemodules/")
 
 find_package(libadd_cpp REQUIRED)
+find_package(libmul_cpp REQUIRED)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include
-                    ${LIBADD_CPP_INCLUDE_DIRS})
+                    ${LIBADD_CPP_INCLUDE_DIRS}
+                    ${LIBMUL_CPP_INCLUDE_DIRS})
 
 # set header files
 set(headers include/calculator.h)
@@ -21,7 +23,8 @@ add_executable(calculator_cpp
   ${headers}
 )
 target_link_libraries(calculator_cpp
-                      ${LIBADD_CPP_LIBRARIES} )
+                      ${LIBADD_CPP_LIBRARIES} 
+                      ${LIBMUL_CPP_LIBRARIES})
 
 install(TARGETS calculator_cpp DESTINATION bin)
 

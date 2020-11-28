@@ -18,9 +18,13 @@ int main(int argc, char **argv)
     printf("you need exact 2 arguments\n");
   }
 
-  Calculator mycalc("add");
+  Calculator mycalc_add("add");
 
-  mycalc.doCalculation(a, b);
+  mycalc_add.doCalculation(a, b);
+
+  Calculator mycalc_mul("mul");
+
+  mycalc_mul.doCalculation(a, b);
 
   return 0;
 }

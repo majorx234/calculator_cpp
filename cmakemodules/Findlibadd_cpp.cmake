@@ -6,9 +6,9 @@
 # 
 # This module defines
 #  LIBADD_CPP_INCLUDE_DIRS, where to find header, etc.
-#  LIBADD_CPP_LIBRARIES, the libraries needed to use jsoncpp.
-#  LIBADD_CPP_FOUND, If false, do not try to use jsoncpp.
-#  LIBADD_CPP_INCLUDE_PREFIX, include prefix for jsoncpp
+#  LIBADD_CPP_LIBRARIES, the libraries .
+#  LIBADD_CPP_FOUND, If false,
+#  LIBADD_CPP_INCLUDE_PREFIX,
 
 # only look in default directories
 find_path(
@@ -26,7 +26,7 @@ find_library(
 set(LIBADD_CPP_INCLUDE_DIRS ${LIBADD_CPP_INCLUDE_DIR})
 set(LIBADD_CPP_LIBRARIES ${LIBADD_CPP_LIBRARY})
 
-# find JSONCPP_INCLUDE_PREFIX
+# find LIBADD_CPP_INCLUDE_PREFIX
 find_path(
   LIBADD_CPP_INCLUDE_PREFIX
   NAMES add.h
